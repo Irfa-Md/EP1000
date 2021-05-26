@@ -17,7 +17,7 @@ ul {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 20px;
   }
   
   li a:hover, .dropdown:hover .dropbtn {
@@ -53,9 +53,24 @@ ul {
   header {
   padding: 30px;
   text-align: center;
-  background:rgb(165, 147, 147);
+  background:linear-gradient(125deg,purple,rgb(240, 130, 240),blue,green);
+  background-size: 400%;
   font-size: 30px;
   font-family: Arial;
+  color: #ddd;
+  animation:bganimation 15s infinite;
+}
+
+@keyframes bganimation{
+  0%{
+    background-position:0% 50%;
+  }
+  50%{
+    background-position:100% 50%;
+  }
+  0%{
+    background-position:0% 50%;
+  }
 }
 
 body{
@@ -140,24 +155,39 @@ body{
 }
 
 .slide{
-  width: 1200px;
-  height: 450px;
-  background:url(./images/model.png);
-  margin: 30px auto;
+  width: 900px;
+  height: 600px;
+  background-image:url(./images/model.png);
+  margin: 10px auto;
   animation: slide 20s infinite;
 }
 
 @keyframes slide{
   25%{
-    background:url(./images/model.png)
+    background-image:url(./images/model.png)
   }
   50%{
-    background:url(./images/coding.png)
+    background-image:url(./images/coding.png)
   }
   75%{
-    background:url(./images/laser.jpg)
+    background-image:url(./images/laser.png)
   }
  100%{
-    background:url(./images/fusion.png)
+    background-image:url(./images/fusion.png)
   }
+}
+
+.mainh{
+  color: rgb(250, 248, 248);
+  text-align: center;
+  padding: 150px;
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 10px 10px 5px grey;
+}
+
+.mainp{
+  width: 60%;
+  height: 125px;
+  padding-left: 10px;
 }
