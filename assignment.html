@@ -57,8 +57,8 @@
                   </tr>
                   <tr>
                       <td>IDE</td>
-                      <td>Arduino</td>
-                      <td></td>
+                      <td>Arduino IDE 2.0 beta</td>
+                      <td>beginner friendly, write and upload programs</td>
                   </tr>
                   <tr>
                       <td>Browser</td>
@@ -78,13 +78,6 @@
 
       <div class="row">
           <div class="card">
-              <h3>Name tag</h3>
-              <iframe src="https://ichat157.autodesk360.com/shares/public/SH919a0QTf3c32634dcf30c3431714437f32?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-          </div>
-      </div>
-
-      <div class="row">
-          <div class="card">
               <h3>Knight Piece</h3>
               <iframe src="https://ichat157.autodesk360.com/shares/public/SH919a0QTf3c32634dcf4e27a0bec5fbbd2c?mode=embed" width="800" height="600" allowfullscreen="true" 
               webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
@@ -95,8 +88,13 @@
               <p><img src="images/knight.png"  style="width: 300px;"/></p> 
               <p>Beginning of print:</p>
               <p><img src="images/print(s).jpg" style="width:300px;"/></p>
-              <p>Final Outcome:</p>
+              <p>The first 4 layers have been successfully printed.</p>
+              <p>Print Outcome:</p>
               <p><img src="images/print(f).jpg" style="width:300px;"/></p>
+              <p>The print was successful, no printing error occur. The structure was rigid and the support were in place.</p>
+              <p>Final Outcome:</p>
+              <p><img src="images/knight.jpg" style="width:300px;"/></p>
+              <p>I remove the support using a piler and sanding down the rough bits. I also learn that i can use hot air to remove it too.</p>
           </div>
       </div>
       <div class="row">
@@ -104,8 +102,20 @@
               <h3>Musical Box </h3>
               <iframe src="https://ichat157.autodesk360.com/shares/public/SH919a0QTf3c32634dcf877117952ee97eb4?mode=embed" width="640" height="480" allowfullscreen="true" 
               webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-              <p>Parameters:</p>
+              <p>Create a sketch of a rectangle with joints at each sides (Side Wall) >>> Repeat sketch step for (Front Wall) >>> Extrude and combine the walls 
+                  >>> create midplane on each wall >>> mirror the side wall using the front wall midplane >>> repeat step for front wall using side wall midplane
+                >>> create the bottom wall and combine >>> design the top </p>
+                <p><b>Dimension:</b><br>90mm x 70mm x 50 mm</p>
+              <p><b>Parameters:</b></p>
               <p><img src="images/Parameters.png" style="width: 800px;"/></p>
+              <p>Laser Cut:</p>
+              <p><img src="images/laser.jpg" style="width: 800px;"/></p>
+              <p>The wood thickness is 3.6mm. The settings for the print to cut is Auto Focus,Power:90%, Speed:10% ,Frequency:10% and Air assist on.<br>
+                 The settings to engrave is Power:90%, Speed:40%. The first cut didnt cut through, repeating the cut, the engrave 
+                cause burn marks, to counter this i sand it to remove the burn mark.</p>
+              <p>Final Outcome:</p>
+              <p><img src="images/music(f).jpg" style="width: 800px;"/></p>
+              <p>I secured the box using super glue and cut the holes for the music box.</p>
           </div>
       </div>
       <div class="row">
@@ -113,13 +123,22 @@
               <h3>555 timer</h3>
               <iframe width="725" height="453" src="https://www.tinkercad.com/embed/hLdvFRFbXeN?editbtn=1" 
               frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+              <p>The 555 timer ic is used to create delay or pulse in the circuit. In this diagram,
+                  once the voltage is activated, the trigger signal is also activated. Therefore, led will turn on. The trigger pin is connected
+                  to the treshold pin and a polarized capacitor. Since the polarized capcitor is connected to 
+                  the trigger pin, the capacitor will charge up. Once it reach a certain level of charge, it will send a signal to the treshold.
+                  Which will then turn off the led. Internally, the treshold signal will then activate the discharge trigger. The discharge signal
+                  will cause the polarized capcitor to discharge, after which it will the trigger signal is activated again, creating a endless loop.
+              </p>
           </div>
       </div>
       <div class="row">
           <div class="card">
-              <h3>Arduino UNO</h3>
-              <iframe width="725" height="453" src="https://www.tinkercad.com/embed/1UyGKiV6drk?editbtn=1" 
-              frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+              <h3>LEDs</h3>
+              <iframe width="560" height="350" src="https://www.tinkercad.com/embed/bscBAs1WbaQ?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+              <p>The way this circuit works is that the arduino act as the brain of the circuit. Each time the push button is press, it will on one led and turn off
+                  the others. This cycle can be repeated 3 times before the cycle repeats itself. The specs for this circuit is push switch is the input and LEDs as output.
+              </p>
           </div>
       </div>
 </body>
