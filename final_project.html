@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" href="mystyles.css">
     <head>
         <title>Final Project</title>
     </head>
@@ -9,23 +10,46 @@
         </header>
         <nav>
             <ul>
-
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown" > <a href="project.html" class="dropbtn">Project</a>
+                    <div class="content">
+                        <a href="./project.html#27,23">Week 1</a>
+                        <a href="./project.html#38,20">Week 2</a>
+                        <a href="./project.html#50,20">Week 3</a>
+                        <a href="./project.html#83,20">Week 4</a>
+                        <a href="./project.html#101,20">Week 5</a>
+                        <a href="./project.html#128,20">Week 6</a>
+                        <a href="./project.html#147,20">Week 7</a>
+                        <a href="./project.html#161,20">Week 8</a>
+                        <a href="./project.html#174,20">Week 9-10</a>
+                        <a href="./project.html#196,20">Week 11</a>
+                        <a href="./project.html#211,20">Week 12</a>
+                        <a href="./project.html#222,20">Week 13</a>
+                        <a href="./project.html#235,20">Week 14</a>
+                    </div>
+                    </li>
+                <li><a href="assignment.html">Assignment</a></li>
+                <li><a href="final_project.html">Final Project</a></li>
             </ul>
         </nav>
         <div class="row">
             <div class="card">
                 <h3>Project Sketch</h3>
+                <p><img src="images/sketch (2).jpg" style="width: 1024px; height:768px; "/></p>
+                <p>The way this product works is by waving a hand at the PIR sensor. It will activate the NeoPixels
+                 which display the time.</p>
             </div>
         </div>
         <div class="row">
             <div class="card">
                 <h3>Project Design</h3>
-                <p>The idea of the RGB clock is by a user named 'Mark Daniel Belarmino' on the ProjectHub. The parts for his 
-                    project consists of 140 Neopixels, Arduino ATmega2560 & RTC DS1307. In his project, he 3D printer his body work 
-                    and have 4 LEDs per digit. In contrast, i will be using a 28 Neopixels, Arduino UNO/NANO & RTC DS3231. I also followed
+                <p>The idea of the RGB clock is by a user named <i>'Mark Daniel Belarmino'</i> on the ProjectHub. The parts for his 
+                    project consists of <i>140 Neopixels, Arduino ATmega2560 & RTC DS1307</i>. In his project, he 3D printed his body work 
+                    and have 4 LEDs per digit. In contrast, i will be using a <i>28 Neopixels, Arduino UNO/NANO & RTC DS3231</i>. I also followed
                     his code and made a few changes by adding a PIR input and 7-segment binanry input. As for the wiring of the NeoPixels,
-                    i was recommended by my lecturer to watch 'DIY Arduino LED clock | Arduino Projects | 7 Segment Display | LED digital Clock from Cardboard'
-                    by 'Art, Craft and Knowledge'. The video shows me how to connect each pixel to display the time.
+                    i was recommended by my lecturer to watch <i>'DIY Arduino LED clock | Arduino Projects | 7 Segment Display | LED digital Clock from Cardboard'
+                    </i>by <i>'Art, Craft and Knowledge'</i>. The video shows me how to connect each pixel to display the time.
                 </p>
                 <p><br><b>References:</b><br><iframe frameborder='0' height='410' scrolling='no' src='https://create.arduino.cc/projecthub/makiko/rgb-large-digital-clock-579e80/embed' width='360' style='margin-top:30px'></iframe>
                 <br>https://youtu.be/vkphJ86zm0Q</p>
@@ -33,22 +57,121 @@
         </div>
         <div class="row">
             <div class="card">
-                <h3>"How-to"</h3>
-                <p></p>
+                <h3>Production</h3>
+                <p>This is a step-by-step "<b>How-to"</b>:</p>
+                <p><iframe src="https://ichat157.autodesk360.com/shares/public/SH919a0QTf3c32634dcfab0fe13d095fb817?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe></p>
+                <p><b>CAD:</b>Use CAD to design and visualize the body and 3D printed items. For the bodywork, design a rectangular box without the front panel
+                    with box joints and the dimensions from the preliminary sketch. As for the backplate, first create slots with the thickness of the arcylic
+                    on the sidewall. Next, midplane the sidewall. Finally, create a rectangle face on the midplane and combine it with the bodywork. The 7-Segment 
+                    is created by using the canvas tool. Trace the 7-segment display. Using the rectangular pattern tool create 3 more display.
+                </p>
+                <p> There is two 3D printed item in this project. The first item is called a clip. To design the clip make sure the slot is as wide as the thickness
+                    of the arcylic. The second item is the holder for the NANO and the RTC. Using the dimension of the elctronics, create rectangles in a bigger rectangles.
+                    Create slots in the holder for better wire management.
+                </p>
+                <p><img src="images/clip.png" style="width: 1024px; height:768px; "/><img src="images/holder.png" style="width: 1024px; height:768px"/></p></p>
+                <p><b>3D Printing:</b>After designing the intended items for printing, we then proceed to the printing stage.
+                First we have to slice it in the the CURA software, we also must ensure that printing settings are correct. 
+                The settings are <i>Material: PLA, Nozzle:0.4mm, Layer Height:0.2mm, Wall Thickness:0.8mm, Wall Count:4, Infil:15%
+                Bed Adhesion:Brim</i>. Ensure that the first 4 layers is printed properly before leaving.
+                </p>
+                <p><img src="images/cutting.png" style="width: 1024px; height:768px; "/><img src="images/cutting 2.png" style="width: 1024px; height:768px; "/></p>
+                <p><b>Laser Cutting:</b>Pick out the material and measure its thickness. I went for a 3mm white arcylic. Next import your sketches in LibreCAD and arrange it to
+                ensure that no material is wasted. Save it as a DXF. file. Next import the file into CorelDraw. Ensure that there is enough space on the mateial for the cut. If 
+                not measure the limited space, use the ruler in CorelDraw as the guideline and fit in the pieces. Change the dimension to 'hairline'. 
+                After preparing the sketches, prepare the printer by ensuring the setting for the cut is correct. Turn on AutoFocus, change <i>Power: 90%, Speed: 15% and Frequency: 90%</i>
+                , don't forget to set in the thickness of the material. Next prepare the printer for the cut.</p>
+                <p>Printer Paperation:<br>1. Go to config and press rest to (0,0).<br>2. Jog the nozzle to space available.<br>3.Open lid and begin printing to check there is enough space.<br>4. Close lid to print, make sure correct
+                file is use.</p>
+                <p>After print is done make sure it cut through if not repeat the cutting procedure.</p>
+                <p><b>Microcontroller:</b>I use the Arduino UNO for testing and debugging and for the final project i use the NANO as it is smaller then the UNO </p>
+                <p><b>I/P:</b>RTC DS3231 && PIR sensor</p>
+                <p><b>O/P:</b>NeoPixels LED</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h3>Bill of Material</h3>
+                <table id="software">
+                    <tr>
+                        <th>Qty</th>
+                        <th>Item description</th>
+                        <th>Costs</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Arduino Nano</td>
+                        <td>$8.05</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>HC-SR501 PIR Sensor</td>
+                        <td>$4.50</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>DS3231 RTC</td>
+                        <td>$4.60</td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td>AdaFruit NeoPixels RGB Strip</td>
+                        <td>$19.95</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>3mm Arcylic Sheet</td>
+                        <td>$8.05</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h3>Code</h3>
+                <iframe src=https://create.arduino.cc/editor/iirfan_bs/4b84aa68-4a72-481e-b84d-dd4f647191a9/preview?embed style="height:510px;width:600px;margin:10px 0" frameborder=0></iframe>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h3>Intergration</h3>
+                <p><img src="images/assemble.jpg" style="width: 1024px; height:768px; "/></p>
+                <p>I secure the walls with tape so that i can fix in the neccessary parts</p>
+                <p><img src="images/glue.jpg" style="width: 1024px; height:768px; "/></p>
+                <p>Glue the side walls in place with the bottom wall</p>
+                <p><img src="images/hole.jpg" style="width: 1024px; height:768px; "/></p>
+                <p>Drill in holes for wires for the Neopixels to keep it nice and tidy</p>
+                <p><img src="images/back.jpg" style="width: 1024px; height:768px; "/></p>
+                <p>Slot in the NeoPixels board</p>
+                <p><img src="images/sensor.jpg" style="width: 1024px; height:768px; "/></p>
+                <p>Slot in the PIR sensor in the opening and glue the top wall to the sides wall</p>
+                <p><img src="images/figuring.jpg" style="width: 1024px; height:768px; "/></p>
+                <p>Glue down the clip</p>
+                <p><img src="images/back cover.jpg" style="width: 1024px; height:768px; "/></p>
+                <p>Glue on translucent sheet on the 7-segment board</p>
+                <p><img src="images/cliping.jpg" style="width: 1024px; height:768px; "/></p>
+                <p>Slot in the 7-segment into the clips</p>
+                <p><img src="images/front.jpg" style="width: 1024px; height:768px; "/></p>
+                <p>Glue another translucent sheet as the "front" panel</p>
+                <p>Cut out the holes for the plug & screws</p>
+                <p>Leave the back wall unglue, for easier accesibility to the electronics</p>
             </div>
         </div>
         <div class="row">
             <div class="card">
                 <h3>Summary</h3>
-                <p>The project was a success, even though the coding took a long time. There were no defect for laser cuts and the printer model.
-                    There is a minor problem with the PIR sensor, there seem to be a delay when trying to activate it. In terms of upgradability,
-                    i could add rotary switches so that the clock can be manually adjust. 
+                <p>The project was a success, even though the coding took a long time. There were no defect for laser cuts and the printed model.
+                    There is a minor problem with the PIR sensor, there seem to be a delay when trying to activate it. I should also try to improve my soldering
+                    as it cause many wiring problem.
+                    In terms of upgradability, i could add rotary switches so that the clock can be manually adjust. 
                 </p>
         </div>
         <div class="row">
             <div class="card">
                 <h3>User Manual</h3>
-                <p></p>
+                <p>1. Insert plug into the slot</p>
+                <p>2. Wave hand to activate the clock</p>
+                <p>3. Clock will turn off after awhile</p>
             </div>
         </div>
     </body>
